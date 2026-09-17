@@ -3,10 +3,10 @@
 A sleek, interactive 3D Neomorphic control deck built with Flutter & Dart, demonstrating advanced micro-interactions and state management.
 
 ## ✨ Features
-- **DJ Soundboard**: Built using dual opposing `BoxShadow` physics and `GestureDetector`.
-- **Live State Management**: Real-time tap counts, energy calibration sliders, and status monitors.
-- **Adaptive Theme System**: Seamless switching between Dark Cyber Mode and Light Neomorphic Mode.
-- **Order DoorDash**: You can instantly order DoorDash, your favorite order from your favorite restaurant, right to your door; save your fingers from lots of tapping.
+- **DJ Soundboard**: Play cool DJ sounds when you need to start some vibes!
+- **Enable VPN**: Enable the VPN for unlimited OPSEC. Rotate your ISP and location on each tap!
+- **Free WiFi Scanner**: Scan for free networks around you! Get Free WiFi wherever you go! Don't hold up!
+- **Order DoorDash**: You can instantly order DoorDash, your favorite order from your favorite restaurant, right to your door; save your fingers from lots of tapping on the DoorDash app.
 
 ## 🛠️ Tech Stack
 - **Framework**: Flutter (Material 3)
