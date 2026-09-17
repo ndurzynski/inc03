@@ -126,7 +126,7 @@ class _ControlDeckScreenState extends State<ControlDeckScreen> {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(widget.isDark ? 0.3 : 0.08),
+                    color: Colors.black.withValues(alpha: widget.isDark ? 0.3 : 0.08),
                     blurRadius: 15,
                     offset: const Offset(0, 5),
                   ),
@@ -144,7 +144,7 @@ class _ControlDeckScreenState extends State<ControlDeckScreen> {
                     ],
                   ),
                   // Vertical Divider Line
-                  Container(width: 1, height: 40, color: Colors.grey.withOpacity(0.3)),
+                  Container(width: 1, height: 40, color: Colors.grey.withValues(alpha: 0.3)),
                   // Energy / Power Level Indicator
                   Column(
                     children: [
@@ -217,7 +217,7 @@ class _ControlDeckScreenState extends State<ControlDeckScreen> {
               min: 0,
               max: 100,
               activeColor: Colors.blueAccent,
-              inactiveColor: Colors.grey.withOpacity(0.3),
+              inactiveColor: Colors.grey.withValues(alpha: 0.3),
               // setState updates powerLevel immediately during slider drag
               onChanged: (newVal) => setState(() => powerLevel = newVal),
             ),
@@ -288,13 +288,13 @@ class _TactileButtonState extends State<TactileButton> {
           boxShadow: isPressed
               ? [
                   // Pressed (Sunken) Shadow Offsets
-                  BoxShadow(color: darkShadow.withOpacity(0.5), offset: const Offset(2, 2), blurRadius: 4),
-                  BoxShadow(color: lightShadow.withOpacity(0.5), offset: const Offset(-2, -2), blurRadius: 4),
+                  BoxShadow(color: darkShadow.withValues(alpha: 0.5), offset: const Offset(2, 2), blurRadius: 4),
+                  BoxShadow(color: lightShadow.withValues(alpha: 0.5), offset: const Offset(-2, -2), blurRadius: 4),
                 ]
               : [
                   // Unpressed (Elevated) Shadow Offsets
-                  BoxShadow(color: darkShadow.withOpacity(0.7), offset: const Offset(8, 8), blurRadius: 16),
-                  BoxShadow(color: lightShadow.withOpacity(0.9), offset: const Offset(-8, -8), blurRadius: 16),
+                  BoxShadow(color: darkShadow.withValues(alpha: 0.7), offset: const Offset(8, 8), blurRadius: 16),
+                  BoxShadow(color: lightShadow.withValues(alpha: 0.9), offset: const Offset(-8, -8), blurRadius: 16),
                 ],
         ),
         child: Column(
